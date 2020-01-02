@@ -1,0 +1,45 @@
+{
+  "name": "github-search-commits",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.8.0",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/styles": "^4.7.1",
+    "axios": "^0.19.0",
+    "moment": "^2.24.0",
+    "next": "9.1.6",
+    "next-redux-wrapper": "^4.0.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-infinite-scroll-component": "^5.0.4",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-info": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addon-storysource": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/react": "^5.2.8",
+    "babel-loader": "^8.0.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^24.9.0",
+    "react-test-renderer": "^16.12.0",
+    "storybook-addon-responsive-views": "^2.3.0"
+  }
+}

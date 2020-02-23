@@ -169,10 +169,14 @@ export const userReducer = (state = initialState, action) => {
         case actionTypes.USER_SUCCESSFUL_RESPONSE: return {
             ...state,
             userCredentials: action.payload,
+            userError: '',
+            reposError: '',
             loading: false
         }
         case actionTypes.USER_FAILED_RESPONSE: return {
             ...state,
+            userCredentials: [],
+            repos: [],
             userError: action.payload,
             loading: false
         }
@@ -185,16 +189,22 @@ export const userReducer = (state = initialState, action) => {
         case actionTypes.REPOS_SUCCESSFUL_RESPONSE: return {
             ...state,
             repos: action.payload,
+            userError: '',
+            reposError: '',
             loading: false
         }
         case actionTypes.REPOS_FAILED_RESPONSE: return {
             ...state,
+            userCredentials: [],
+            repos: [],
             reposError: action.payload,
             loading: false
         }
         case actionTypes.REPOS_SUCCESSFUL_SEQUENTIAL_RESPONSE: return {
             ...state,
             repos: [...state.repos, ...action.payload],
+            userError: '',
+            reposError: '',
             loading: false
         }
         case actionTypes.REPOS_RESPONSE_PARAMETERS: return {

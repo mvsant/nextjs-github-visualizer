@@ -20,5 +20,3 @@ export function pageLoader(page, loadFirst, loadOthers) {
         return loadOthers
     }
 }
-
-//console.log(pageLoader(1, a(1),b(1)))

@@ -16,7 +16,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
     "axios": "^0.26.1",
-    "moment": "^2.29.2",
+    "moment": "^2.29.4",
     "next": "^12.1.0",
     "peers": "^0.1.0",
     "react": "^17.0.2",
